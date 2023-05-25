@@ -1,11 +1,10 @@
-let first = document.getElementById('first-input');
-let second = document.getElementById('second-input');
-var result = document.getElementById('answer')
-let button = document.getElementById('btn');
+function addNum {
+let first =parseInt(document.getElementById("first-input").value);
+let second= parseInt(document.getElementById("second-input").value);
+const result = document.getElementById("answer");
+answer.value = first + second;
+return result
 
-function addNum() {
-    let firstNumber = first.value;
-    let secondNumber = second.value;
-    let result = firstNumber+secondNumber;
-    return result;
 }
+
+btn.addEventListener('click', addNum);
